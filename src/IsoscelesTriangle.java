@@ -25,7 +25,7 @@ public class IsoscelesTriangle implements Triangles {
     public double calculateArea(double firstSide, double secondSide, double thirdSide){
         baseDefine(firstSide, secondSide, thirdSide);
         double height = calculateHeight(base, side);
-        return (side * height) / 2;
+        return (base * height) / 2;
     }
 
 }
