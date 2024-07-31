@@ -6,13 +6,13 @@ public class IsoscelesTriangle implements Triangles {
         if(firstSide == secondSide){
             this.base = thirdSide;
             this.side = firstSide;
-        }
-        if(firstSide == thirdSide){
+        }else if(firstSide == thirdSide){
             this.base = secondSide;
             this.side = firstSide;
+        }else{
+            this.base = firstSide;
+            this.side = secondSide;
         }
-        this.base = firstSide;
-        this.side = secondSide;
     }
 
     // Find the height of the triangle using the Pythagorean theorem
